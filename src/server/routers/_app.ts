@@ -1,7 +1,7 @@
 import * as trpc from '@trpc/server';
 import {baseProcedure, router} from "../trpc";
 
-const appRouter = router({
+export const appRouter = router({
     greeting: baseProcedure.query(()=>'hello tRPC!')
 })
 
