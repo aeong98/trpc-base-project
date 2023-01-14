@@ -1,4 +1,4 @@
-import {trpc} from "../utils/trpc";
+import {trpc} from "src/utils/trpc";
 
 export default function MainPage(){
     const greeting = trpc.greeting.useQuery();
