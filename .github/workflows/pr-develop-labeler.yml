@@ -9,6 +9,7 @@ permissions: write-all
 
 jobs:
   add_labels:
+    if: ${{ github.base_ref == 'develop' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
