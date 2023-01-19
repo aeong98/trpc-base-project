@@ -3,7 +3,6 @@ name: Test labeler
 on:
   pull_request:
     types: opened
-    branches : [develop]
 
 jobs:
   add_labels:
