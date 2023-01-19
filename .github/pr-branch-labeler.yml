@@ -1,0 +1,15 @@
+#  https://github.com/marketplace/actions/pr-branch-labeler
+feature:
+  head: ["feature/*", "feat/*"]
+fix:
+  head: ["bugfix/*", "fix/*"]
+hotfix:
+  head: "hotfix/*"
+enhancement:
+  head: ["enhance/*", "enhancement/*"]
+
+
+develop:
+  base: "develop"
+release:
+  base: "main"
