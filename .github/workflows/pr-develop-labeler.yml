@@ -4,6 +4,8 @@ on:
   pull_request:
     branches: [develop]
 
+permissions: write-all
+
 jobs:
   add_labels:
     runs-on: ubuntu-latest
