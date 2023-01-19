@@ -2,24 +2,15 @@ name: Test labeler
 
 on:
   pull_request:
-    branches: [develop, main]
+    branches: [develop]
 
 permissions: write-all
 
 jobs:
-  add_develop_labels:
+  add_labels:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions-ecosystem/action-add-labels@v1
-        if: ${{ github.base_ref == "develop" }}
         with:
           labels: develop
-  add_release_labels:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions-ecosystem/action-add-labels@v1
-        if: ${{ github.base_ref == "main" }}
-        with:
-          labels: release
