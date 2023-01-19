@@ -1,4 +1,8 @@
 #  https://github.com/marketplace/actions/pr-branch-labeler
+develop:
+  base: "develop"
+release:
+  base: "main"
 feature:
   head: ["feature/*", "feat/*"]
 fix:
@@ -7,9 +11,3 @@ hotfix:
   head: "hotfix/*"
 enhancement:
   head: ["enhance/*", "enhancement/*"]
-
-
-develop:
-  base: "develop"
-release:
-  base: "main"
