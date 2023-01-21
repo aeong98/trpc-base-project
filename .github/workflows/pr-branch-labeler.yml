@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Label PRs
         env:
-          ACTIONS_STEP_DEBUG: ${{ secrets.ACTIONS_STEP_DEBUG }}
+          ACTIONS_STEP_DEBUG: true
 #        if: github.event.action == 'opened' # Only run the action when the PR was first opened
         uses: aeong98/auto-labeler@pre-release
         with:
