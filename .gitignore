@@ -15,7 +15,7 @@
 *.pem
 .idea/*
 
-# debug@
+# debug@222
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
