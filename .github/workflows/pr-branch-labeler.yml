@@ -12,6 +12,6 @@ jobs:
         env:
           ACTIONS_STEP_DEBUG: true
 #        if: github.event.action == 'opened' # Only run the action when the PR was first opened
-        uses: aeong98/auto-labeler@test
+        uses: aeong98/Pull-Request-Labeler@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
