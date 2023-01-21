@@ -10,4 +10,5 @@ fix:
 hotfix:
   head: "hotfix/*"
 enhancement:
+  #테스트
   head: ["enhance/*", "enhancement/*"]
