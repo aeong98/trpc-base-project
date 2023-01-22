@@ -1,11 +1,14 @@
 import * as trpc from '@trpc/server';
 import * as trpcNext from '@trpc/server/adapters/next';
+import {prisma} from "src/utils/prisma";
 
 export const createContext = async (
     opts?: trpcNext.CreateNextContextOptions,
 )=>{
     return{
         req: opts?.req,
+        prisma,
+        task: prisma.task
     }
 }
 
