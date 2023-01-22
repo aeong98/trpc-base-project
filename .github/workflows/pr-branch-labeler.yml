@@ -14,3 +14,5 @@ jobs:
         uses: aeong98/Pull-Request-Labeler@pre-release
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          config-pathname: .github/pr-branch-labeler.yml
+
